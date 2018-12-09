@@ -7001,8 +7001,10 @@ body {
   right: 0;
   background: rgba(0, 0, 0, 0.5);
   overflow: auto;
-  z-index: 9999; }
+  z-index: 9999;
+  white-space: nowrap; }
   .test-links a {
+    display: inline-block;
     color: white;
     text-decoration: none;
     white-space: nowrap;
