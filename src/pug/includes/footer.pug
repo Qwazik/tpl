@@ -68,3 +68,147 @@ footer.page__footer
       .row.page-footer__row.page-footer__row_2
         .col
           .copyright 2018 © Аспро: Next – универсальный интернет-магазин
+.modals
+  .modal#modalReg
+    .modal-header Регистрация
+      button.modal-close: i.icm.icm-close
+    .modal-body
+      form(action="#").form
+        .form-row
+          input(type="text" placeholder="Имя").input
+        .form-row
+          input(type="email" placeholder="E-mail").input
+        .form-row
+          input(type="password" placeholder="Придумайте пароль").input
+        .form-row
+          input(type="password" placeholder="Повторите пароль").input
+        .form-row.modal-footer 
+          button(type="submit").btn.btn-secondary-fill.btn_tt.modal-btn Зарегистрироваться
+          a(href="#").modal-link У меня уже есть аккаунт
+    .modal-auth
+      .modal-auth__header Войти через
+      .modal-auth__social
+        ul.social-auth
+          li.social-auth__item: i.icm.icm-facebook
+          li.social-auth__item: i.icm.icm-twitter
+          li.social-auth__item: i.icm.icm-vk
+          li.social-auth__item: i.icm.icm-google
+          li.social-auth__item: i.icm.icm-inst
+          li.social-auth__item: i.icm.icm-ok
+  .modal#modalRestore
+    .modal-header Восстановление <br> пароля
+      button.modal-close: i.icm.icm-close
+    .modal-body
+      form(action="#").form
+        .form-row
+          input(type="email" placeholder="E-mail").input
+        .form-row.modal-footer 
+          button(type="submit").btn.btn-secondary-fill.btn_tt.modal-btn Восстановить пароль
+    .modal-links.justify-content-between
+      a(href="") Вход
+      a(href="") Зарегистрироваться
+    .modal-auth
+      .modal-auth__header Войти через
+      .modal-auth__social
+        ul.social-auth
+          li.social-auth__item: i.icm.icm-facebook
+          li.social-auth__item: i.icm.icm-twitter
+          li.social-auth__item: i.icm.icm-vk
+          li.social-auth__item: i.icm.icm-google
+          li.social-auth__item: i.icm.icm-inst
+          li.social-auth__item: i.icm.icm-ok
+  .modal#modalAuth
+    .modal-header Авторизация
+      button.modal-close: i.icm.icm-close
+    .modal-body
+      form(action="#").form
+        .form-row
+          input(type="email" placeholder="E-mail").input
+        .form-row
+          input(type="password" placeholder="Пароль").input
+        .form-row.modal-footer 
+          .row
+            .col.d-flex.align-item-center
+              label.checkbox
+                input(type="checkbox").checkbox__input
+                span.checkbox__ico
+                span.checkbox__text Запомнить меня
+            .col: button(type="submit").btn.btn-secondary-fill.btn_tt.modal-btn Войти
+    .modal-links.justify-content-between
+      a(href="") Вход
+      a(href="") Зарегистрироваться
+    .modal-auth
+      .modal-auth__header Войти через
+      .modal-auth__social
+        ul.social-auth
+          li.social-auth__item: i.icm.icm-facebook
+          li.social-auth__item: i.icm.icm-twitter
+          li.social-auth__item: i.icm.icm-vk
+          li.social-auth__item: i.icm.icm-google
+          li.social-auth__item: i.icm.icm-inst
+          li.social-auth__item: i.icm.icm-ok
+  .modal#modalCallback
+    .modal-header Заказать звонок
+      button.modal-close: i.icm.icm-close
+    .modal-body
+      form(action="#").form
+        .form-row
+          input(type="text" placeholder="Имя").input
+        .form-row
+          input(type="tel" placeholder="Телефон").input
+        .form-row.modal-footer 
+          .row
+            .col-auto: button(type="submit").btn.btn-secondary-fill.btn_tt.modal-btn Отправить
+        .form-row.mb-3
+          label.checkbox.checkbox-agree
+            input(type="checkbox").checkbox__input
+            span.checkbox__ico
+            span.checkbox__text Я согласен на обработку персональных данных
+  .modal#modalResume
+    .modal-header Резюме
+      button.modal-close: i.icm.icm-close
+    .modal-body
+      form(action="#").form
+        .form-row
+          input(type="text" placeholder="Имя").input
+        .form-row
+          input(type="tel" placeholder="Контактный телефон").input
+        .form-row
+          input(type="email" placeholder="E-mail").input
+        .form-row
+          select.js-select
+            option Желаемая должность
+            option Желаемая должность
+            option Желаемая должность
+        .form-row
+          label.input-download
+            input(type="file").input-download__input
+            span.input-download__text Прикрепить файл
+        .form-row
+          .input-control
+            .input-control-title Текст резюме 
+            textarea.textarea
+        .form-row.modal-footer 
+          .row
+            .col-auto: button(type="submit").btn.btn-secondary-fill.btn_tt.modal-btn Отправить
+
+
+.test-links
+  a(href="#modalReg").fancybox Попап-регистрация
+  a(href="#modalRestore").fancybox Попап-восстановление пароля
+  a(href="#modalAuth").fancybox Попап-Авторизация
+  a(href="#modalCallback").fancybox Попап-Звонок
+  a(href="#modalResume").fancybox Попап-Резюме
+  a(href="about-sert.html") О нас-сертификаты
+  a(href="about-team.html") О нас-команда
+  a(href="about-text.html") О нас-текстовая
+  a(href="about-vacancy.html") О нас-вакансии
+  a(href="actions.html") Акции
+  a(href="blog.html") блог
+  a(href="blog-detail.html") Блог-детальная
+  a(href="cart.html") Корзина
+  a(href="catalog.html") Каталог
+  a(href="contacts.html") Контакты
+  a(href="order.html") Заказ
+  a(href="product.html") Карточка
+  

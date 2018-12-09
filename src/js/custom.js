@@ -1,5 +1,13 @@
 $(function(){
+  $('.js-select').select2({
+    minimumResultsForSearch: -1
+  });
 
+  $('.input-download input[type="file"]').change(function(e){
+    var string = this.value;
+    var fileName = string.substring(string.lastIndexOf('\\')+1, string.length);
+    $(this).siblings('.input-download__text').text(fileName);
+  });
   /*-- START: mobile nav --*/
   var MOBILE_NAV = (function () {
     $('.mobile-nav-btn').click(function(){
@@ -82,7 +90,13 @@ $(function(){
 
     /*-- END: mobile nav --*/
 
-  $('.fancybox').fancybox();
+  $('.fancybox').fancybox({
+    padding: 0,
+    smallBtn: false
+  });
+  $('.modal-close').click(function(){
+    $.fancybox.close(true);
+  })
 	var location = (function(){
     var cnt = '.location';
     if(!$(cnt).length) return false;

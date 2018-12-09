@@ -1413,7 +1413,7 @@ body{
     margin-right: auto;
     &-row{
         &:not(:first-child){
-            margin-top: 5rem;
+            margin-top: 4rem;
         }
     }
     &-group{
@@ -1556,7 +1556,7 @@ body{
     border:none;
     width: 100%;
     border-bottom: 2px solid black;
-    padding: 1.2rem 0;
+    padding: 1.5rem 0;
     line-height: 1;
     font-size: 1.6rem;
     outline:none;
@@ -1569,6 +1569,27 @@ body{
     }
 }
 
+.input-download{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:before{
+        content: '';
+        font-family: icomoon;
+        line-height: 0;
+        font-size: 2.4rem;
+        margin-right: 0.7rem;
+    }
+    &__input{
+        visibility: hidden;
+        position: absolute;
+    }
+    &__text{
+        border-bottom: 1px dotted currentColor;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
 
 .radio{
     cursor: pointer;
@@ -1662,8 +1683,19 @@ body{
 
 .checkbox{
     display: flex;
-    align-items: center;
+    
     cursor: pointer;
+    &-agree{
+        .checkbox__text{
+            opacity: 0.5;
+        }
+        .checkbox__input:checked + span{
+            opacity: 1;
+        }
+        .checkbox__input:checked + span + span{
+            opacity: 1;
+        }
+    }
     &__input{
         position: absolute;
         opacity: 0;
@@ -1671,15 +1703,19 @@ body{
     &__input:checked+&__ico{
         @extend .bg-primary;
     }
+    &__text{
+        display: inline-block;
+        text-align: left;
+        font-size: 13px;
+    }
     &__ico{
         margin-right: 1.3rem;
-        border: 1px solid ;
+        border: 1px solid;
         @extend .bd-primary;
         height: 1.8rem;
         width: 1.8rem;
-    }
-    &__name{
-
+        flex: 0 0 auto;
+        transform: translate(0,.1em);
     }
 }
 
@@ -2304,6 +2340,96 @@ body{
 }
 
 /*-------------------------------------------------*/
+/*  START: modal */
+/*-------------------------------------------------*/
+.modals{
+display: none;
+}
+.modal{
+    padding: 0;
+    background: white;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 40rem;
+    max-width: 100%;
+    &-links{
+         border-top: 1px solid;
+        @extend .bd-muted2;
+        padding: 2.5rem 4rem 3.2rem;
+        font-size: 14px;
+        display: flex;
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    &-link{
+        display: inline-block;
+    }
+    &-btn{
+        font-size: 1.4rem !important;
+        padding: 2rem 4rem !important;
+        min-width: 100%;
+    }
+    &-close{
+        padding: 0;
+        border:none;
+        background:none;
+        opacity: 0.5;
+        top: 1rem;
+        right: 1rem;
+        position: absolute;
+        cursor: pointer;
+    }
+    &-header{
+        @extend .bg-muted2;
+        font-size: 2.7rem;
+        padding: 2.1rem 4rem;
+        text-align: center;
+    }
+    &-body{
+        padding: 2.0rem 4rem;
+        .form{
+            margin-bottom: 0;
+        }
+    }
+    &-link{
+        margin-top: 2.5rem;
+        color: inherit;
+        font-size: 1.4rem;
+    }
+    &-footer{
+        text-align: center;
+    }
+    &-auth{
+        border-top: 1px solid;
+        @extend .bd-muted2;
+        padding: 2.5rem 4rem 3.2rem;
+        text-align: center;
+        font-size: 2rem;
+        .icm-twitter{
+            font-size: 1.2em;
+        }
+        &__header{
+            margin-bottom: 2.1rem;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.social-auth{
+    @extend .ns;
+    display: flex;
+    justify-content: space-between;
+}
+/*-------------------------------------------------*/
+/*  END: modal */
+/*-------------------------------------------------*/
+
+/*-------------------------------------------------*/
 /*  X: ... */
 /*-------------------------------------------------*/
 
@@ -2328,7 +2454,48 @@ body{
 /*-------------------------------------------------*/
 /*  START: plugins */
 /*-------------------------------------------------*/
-
+.select2-container--default .select2-selection--single{
+    border:none;
+    border-radius: 0;
+    border-bottom: 2px solid black;
+    outline: none !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 100%;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow:before{
+    content: '';
+    font-family: icomoon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.4rem;
+    transition: all .3s;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow:before{
+    transform: rotate(180deg);
+}
+.select2-container--default .select2-selection--single{
+    height: auto;
+    padding: 1.5rem 0;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: normal;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    display: none;
+}
+.select2{
+    &-container{
+        min-width: 100%;
+    }
+    &-selection__rendered{
+        padding-left: 0 !important;
+      
+        // padding: 1.5rem 0;
+    }
+}
 //nouislider
 .noUi{
     &-horizontal{
@@ -2423,6 +2590,8 @@ body{
 /*-------------------------------------------------*/
 /*  END:  theme*/
 /*-------------------------------------------------*/
+
+
 
 /*-------------------------------------------------*/
 /*  START: media */
@@ -3445,10 +3614,10 @@ body{
         }
     }
     .page-header{
-        height: 4.3rem;
+        height: 43px;
     }
     body{
-        padding-top: 4.3rem;
+        padding-top: 43px;
     }
     .logo{
         font-size: 1.85rem;
@@ -3515,3 +3684,19 @@ body{
 /*-------------------------------------------------*/
 /*  END: media */
 /*-------------------------------------------------*/
+
+.test-links{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(black,.5);
+    overflow: auto;
+    z-index: 9999;
+    a{
+        color: white;
+        text-decoration: none;
+        white-space: nowrap;
+        padding: 1rem;
+    }
+}
