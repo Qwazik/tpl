@@ -3695,7 +3695,9 @@ display: none;
     background: rgba(black,.5);
     overflow: auto;
     z-index: 9999;
+    white-space: nowrap;
     a{
+        display: inline-block;
         color: white;
         text-decoration: none;
         white-space: nowrap;
