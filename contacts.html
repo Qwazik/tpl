@@ -271,6 +271,186 @@
           </div>
         </div>
       </footer>
+      <div class="modals">
+        <div class="modal" id="modalReg">
+          <div class="modal-header">Регистрация
+            <button class="modal-close"><i class="icm icm-close"></i></button>
+          </div>
+          <div class="modal-body">
+            <form class="form" action="#">
+              <div class="form-row">
+                <input class="input" type="text" placeholder="Имя">
+              </div>
+              <div class="form-row">
+                <input class="input" type="email" placeholder="E-mail">
+              </div>
+              <div class="form-row">
+                <input class="input" type="password" placeholder="Придумайте пароль">
+              </div>
+              <div class="form-row">
+                <input class="input" type="password" placeholder="Повторите пароль">
+              </div>
+              <div class="form-row modal-footer"> 
+                <button class="btn btn-secondary-fill btn_tt modal-btn" type="submit">Зарегистрироваться</button><a class="modal-link" href="#">У меня уже есть аккаунт</a>
+              </div>
+            </form>
+          </div>
+          <div class="modal-auth">
+            <div class="modal-auth__header">Войти через</div>
+            <div class="modal-auth__social">
+              <ul class="social-auth">
+                <li class="social-auth__item"><i class="icm icm-facebook"></i></li>
+                <li class="social-auth__item"><i class="icm icm-twitter"></i></li>
+                <li class="social-auth__item"><i class="icm icm-vk"></i></li>
+                <li class="social-auth__item"><i class="icm icm-google"></i></li>
+                <li class="social-auth__item"><i class="icm icm-inst"></i></li>
+                <li class="social-auth__item"><i class="icm icm-ok"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modalRestore">
+          <div class="modal-header">Восстановление <br> пароля
+            <button class="modal-close"><i class="icm icm-close"></i></button>
+          </div>
+          <div class="modal-body">
+            <form class="form" action="#">
+              <div class="form-row">
+                <input class="input" type="email" placeholder="E-mail">
+              </div>
+              <div class="form-row modal-footer"> 
+                <button class="btn btn-secondary-fill btn_tt modal-btn" type="submit">Восстановить пароль</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-links justify-content-between"><a href="">Вход</a><a href="">Зарегистрироваться</a></div>
+          <div class="modal-auth">
+            <div class="modal-auth__header">Войти через</div>
+            <div class="modal-auth__social">
+              <ul class="social-auth">
+                <li class="social-auth__item"><i class="icm icm-facebook"></i></li>
+                <li class="social-auth__item"><i class="icm icm-twitter"></i></li>
+                <li class="social-auth__item"><i class="icm icm-vk"></i></li>
+                <li class="social-auth__item"><i class="icm icm-google"></i></li>
+                <li class="social-auth__item"><i class="icm icm-inst"></i></li>
+                <li class="social-auth__item"><i class="icm icm-ok"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modalAuth">
+          <div class="modal-header">Авторизация
+            <button class="modal-close"><i class="icm icm-close"></i></button>
+          </div>
+          <div class="modal-body">
+            <form class="form" action="#">
+              <div class="form-row">
+                <input class="input" type="email" placeholder="E-mail">
+              </div>
+              <div class="form-row">
+                <input class="input" type="password" placeholder="Пароль">
+              </div>
+              <div class="form-row modal-footer"> 
+                <div class="row">
+                  <div class="col d-flex align-item-center">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"><span class="checkbox__ico"></span><span class="checkbox__text">Запомнить меня</span>
+                    </label>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-secondary-fill btn_tt modal-btn" type="submit">Войти</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-links justify-content-between"><a href="">Вход</a><a href="">Зарегистрироваться</a></div>
+          <div class="modal-auth">
+            <div class="modal-auth__header">Войти через</div>
+            <div class="modal-auth__social">
+              <ul class="social-auth">
+                <li class="social-auth__item"><i class="icm icm-facebook"></i></li>
+                <li class="social-auth__item"><i class="icm icm-twitter"></i></li>
+                <li class="social-auth__item"><i class="icm icm-vk"></i></li>
+                <li class="social-auth__item"><i class="icm icm-google"></i></li>
+                <li class="social-auth__item"><i class="icm icm-inst"></i></li>
+                <li class="social-auth__item"><i class="icm icm-ok"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modalCallback">
+          <div class="modal-header">Заказать звонок
+            <button class="modal-close"><i class="icm icm-close"></i></button>
+          </div>
+          <div class="modal-body">
+            <form class="form" action="#">
+              <div class="form-row">
+                <input class="input" type="text" placeholder="Имя">
+              </div>
+              <div class="form-row">
+                <input class="input" type="tel" placeholder="Телефон">
+              </div>
+              <div class="form-row modal-footer"> 
+                <div class="row">
+                  <div class="col-auto">
+                    <button class="btn btn-secondary-fill btn_tt modal-btn" type="submit">Отправить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row mb-3">
+                <label class="checkbox checkbox-agree">
+                  <input class="checkbox__input" type="checkbox"><span class="checkbox__ico"></span><span class="checkbox__text">Я согласен на обработку персональных данных</span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal" id="modalResume">
+          <div class="modal-header">Резюме
+            <button class="modal-close"><i class="icm icm-close"></i></button>
+          </div>
+          <div class="modal-body">
+            <form class="form" action="#">
+              <div class="form-row">
+                <input class="input" type="text" placeholder="Имя">
+              </div>
+              <div class="form-row">
+                <input class="input" type="tel" placeholder="Контактный телефон">
+              </div>
+              <div class="form-row">
+                <input class="input" type="email" placeholder="E-mail">
+              </div>
+              <div class="form-row">
+                <select class="js-select">
+                  <option>Желаемая должность</option>
+                  <option>Желаемая должность</option>
+                  <option>Желаемая должность</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label class="input-download">
+                  <input class="input-download__input" type="file"><span class="input-download__text">Прикрепить файл</span>
+                </label>
+              </div>
+              <div class="form-row">
+                <div class="input-control">
+                  <div class="input-control-title">Текст резюме </div>
+                  <textarea class="textarea"></textarea>
+                </div>
+              </div>
+              <div class="form-row modal-footer"> 
+                <div class="row">
+                  <div class="col-auto">
+                    <button class="btn btn-secondary-fill btn_tt modal-btn" type="submit">Отправить</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="test-links"><a class="fancybox" href="#modalReg">Попап-регистрация</a><a class="fancybox" href="#modalRestore">Попап-восстановление пароля</a><a class="fancybox" href="#modalAuth">Попап-Авторизация</a><a class="fancybox" href="#modalCallback">Попап-Звонок</a><a class="fancybox" href="#modalResume">Попап-Резюме</a><a href="about-sert.html">О нас-сертификаты</a><a href="about-team.html">О нас-команда</a><a href="about-text.html">О нас-текстовая</a><a href="about-vacancy.html">О нас-вакансии</a><a href="actions.html">Акции</a><a href="blog.html">блог</a><a href="blog-detail.html">Блог-детальная</a><a href="cart.html">Корзина</a><a href="catalog.html">Каталог</a><a href="contacts.html">Контакты</a><a href="order.html">Заказ</a><a href="product.html">Карточка</a></div>
     </div>
     <!--scripts =================================================-->
     <script src="libs/jquery/dist/jquery.min.js"></script>
