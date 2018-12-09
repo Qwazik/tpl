@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head></head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="libs/chosen/chosen.min.css">
+  <link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="libs/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="libs/nouislider/distribute/nouislider.min.css">
+  <link rel="stylesheet" href="libs/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <body><!--[if lt IE 9]>
+    <p class="browserupgrade">Ваш браузер  <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для корректного отображения сайтов.</p><![endif]-->
+    <div class="page">
+      <header class="page__header">
+        <div class="top-panel">
+          <div class="container">
+            <div class="row">
+              <div class="col top-panel-mobile-section">
+                <div class="mobile-nav-btn"><span></span><span></span><span></span></div>
+                <div class="location">
+                  <div class="location-current" role="current" data-val="Челябинск"><i class="icm icm-placemark location__ico"></i><span role="current-name">Челябинск</span></div>
+                  <ul class="location-list" role="list">
+                    <li class="location-list__item active" data-val="Челябинск" role="item">Челябинск</li>
+                    <li class="location-list__item" data-val="Брянск" role="item">Брянск</li>
+                    <li class="location-list__item" data-val="Москва" role="item">Москва</li>
+                    <li class="location-list__item" data-val="Брянск" role="item">Брянск</li>
+                    <li class="location-list__item" data-val="Москва" role="item">Москва</li>
+                    <li class="location-list__item" data-val="Брянск" role="item">Брянск</li>
+                    <li class="location-list__item" data-val="Москва" role="item">Москва</li>
+                    <li class="location-list__item" data-val="Брянск" role="item">Брянск</li>
+                    <li class="location-list__item" data-val="Москва" role="item">Москва</li>
+                    <li class="location-list__item" data-val="Брянск" role="item">Брянск</li>
+                    <li class="location-list__item" data-val="Москва" role="item">Москва</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-auto">
+                <ul class="top-nav">
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">О нас</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">Как купить</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">Доставка и оплата</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">Гарантия и Возврат</a></li>
+                </ul>
+              </div>
+              <div class="col top-panel__auth">
+                <div class="top-auth"><a class="top-auth__item" href="#">Войти</a><a class="top-auth__item" href="#">Регистрация</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-header">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="d-none d-md-block col d-lg-none"></div>
+              <div class="col">
+                <div class="row page-header__side">
+                  <div class="col"><a class="logo page-header__logo" href="/">Готовое решение</a></div>
+                  <div class="col-auto"><span class="page-header__tel to-tel d-none d-lg-block"><i class="icm icm-phone-in mr-1"></i><span>+7 (000) 000-00-10</span></span></div>
+                </div>
+              </div>
+              <div class="col-auto ta-center d-none d-lg-block"><a class="btn btn-secondary" href="#callback">Заказать звонок</a></div>
+              <div class="col-auto col-sm">
+                <div class="row page-header__side">
+                  <div class="col-auto d-none d-lg-block"><a class="ico-link" href="#"><span class="ico-link__ico"><i class="icm icm-fav"></i></span><span class="ico-link__text">Избранное</span></a></div>
+                  <div class="col-auto d-none d-lg-block"><a class="ico-link" href="#"><span class="ico-link__ico"><i class="icm icm-libra"></i></span><span class="ico-link__text">В сравнении</span></a></div>
+                  <div class="col-auto ml-auto ml-lg-0"><a class="ico-link cart-link" href="#"><span class="ico-link__ico cart-link__ico"><i class="icm icm-cart"></i>
+                        <div class="cart-link__col">12</div></span><span class="ico-link__text"><span>Корзина</span><span class="ico-link__desc">12 товаров на 45 000 р.</span></span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="page__nav">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-auto col-lg">
+                <ul class="main-nav">
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Акции</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Услуги</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Блог</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Проекты</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="col-8 col-lg ml-auto ml-lg-0">
+                <div class="main-search">
+                  <input class="main-search__input" type="text" placeholder="Поиск...">
+                  <button class="main-search__btn" type="submit"><i class="icm icm-magnifier"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container mt-lg-3">
+                <ul class="breadcrumbs mt-3 mt-sm-5">
+                  <li class="breadcrumbs__item"><span class="breadcrumbs__link">Главная</span></li>
+                  <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">О компании</a></li>
+                </ul>
+        <div class="h h-big mb-3 mb-md-5">О компании</div>
+      </div>
+      <div class="about">
+        <div class="about-nav">
+          <div class="container">
+            <div class="about-nav__nav">
+              <div class="about-nav__item active"><a class="about-nav__link" href="#">Сотрудники</a></div>
+              <div class="about-nav__item"><a class="about-nav__link" href="#">Вакансии</a></div>
+              <div class="about-nav__item"><a class="about-nav__link" href="#">Лицензии</a></div>
+              <div class="about-nav__item"><a class="about-nav__link" href="#">Политика конфиденциальности</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-muted1">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-12 mb-3">
+              <div class="about-vacancy">
+                <div class="about-vacancy-toggler"><i class="icm icm-angle-bottom"></i></div>
+                <div class="about-vacancy__top">
+                  <div class="about-vacancy-name"><span>Монтажник связи</span><span class="about-vacancy-name__price">150 000 р.</span></div>
+                  <div class="about-vacancy-desc">Строительство кабельной канализации и прокладка сетей связи xPON. Монтаж короба, труб ПВХ, монтаж абонентских вводов, прокладка оптического кабеля.</div>
+                </div>
+                <div class="about-vacancy__bottom">
+                  <div class="about-vacancy-prop">
+                    <div class="about-vacancy-prop__name">Обязанности:</div>
+                    <div class="about-vacancy-prop__desc">
+                      <ul>
+                        <li>поиск и привлечение клиентов;</li>
+                        <li>активное участие в переговорах;</li>
+                        <li>составление отчетности;</li>
+                        <li>ведение, поддержание и развитие клиентской базы.;</li>
+                        <li>анализ рынка и сбор информации о клиентах;</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about-vacancy-prop">
+                    <div class="about-vacancy-prop__name">Требования:</div>
+                    <div class="about-vacancy-prop__desc">
+                      <ul>
+                        <li>высшее образование;</li>
+                        <li>наличие личного автомобиля;</li>
+                        <li>наличие опыта;</li>
+                        <li>порядочность, ответственность, стрессоустойчивость</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about-vacancy-prop">
+                    <div class="about-vacancy-prop__name">Условия:</div>
+                    <div class="about-vacancy-prop__desc">
+                      <ul>
+                        <li>официальное оформление</li>
+                        <li>полная занятость</li>
+                        <li>полный соц. пакет</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about-vacancy__btn btn btn-secondary-fill btn_fat mt-5">Отправить резюме</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="about-vacancy">
+                <div class="about-vacancy-toggler"><i class="icm icm-angle-bottom"></i></div>
+                <div class="about-vacancy__top">
+                  <div class="about-vacancy-name"><span>Монтажник связи</span><span class="about-vacancy-name__price">150 000 р.</span></div>
+                  <div class="about-vacancy-desc">Строительство кабельной канализации и прокладка сетей связи xPON. Монтаж короба, труб ПВХ, монтаж абонентских вводов, прокладка оптического кабеля.</div>
+                </div>
+                <div class="about-vacancy__bottom">
+                  <div class="about-vacancy-prop">
+                    <div class="about-vacancy-prop__name">Обязанности:</div>
+                    <div class="about-vacancy-prop__desc">
+                      <ul>
+                        <li>поиск и привлечение клиентов;</li>
+                        <li>активное участие в переговорах;</li>
+                        <li>составление отчетности;</li>
+                        <li>ведение, поддержание и развитие клиентской базы.;</li>
+                        <li>анализ рынка и сбор информации о клиентах;</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about-vacancy-prop">
+                    <div class="about-vacancy-prop__name">Требования:</div>
+                    <div class="about-vacancy-prop__desc">
+                      <ul>
+                        <li>высшее образование;</li>
+                        <li>наличие личного автомобиля;</li>
+                        <li>наличие опыта;</li>
+                        <li>порядочность, ответственность, стрессоустойчивость</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about-vacancy-prop">
+                    <div class="about-vacancy-prop__name">Условия:</div>
+                    <div class="about-vacancy-prop__desc">
+                      <ul>
+                        <li>официальное оформление</li>
+                        <li>полная занятость</li>
+                        <li>полный соц. пакет</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about-vacancy__btn btn btn-secondary-fill btn_fat mt-5">Отправить резюме</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="about-vacancy">
+                <div class="about-vacancy-toggler"><i class="icm icm-angle-bottom"></i></div>
+                <div class="about-vacancy__top">
+                  <div class="about-vacancy-name"><span>Монтажник связи</span><span class="about-vacancy-name__price">150 000 р.</span></div>
+                  <div class="about-vacancy-desc">Строительство кабельной канализации и прокладка сетей связи xPON. Монтаж короба, труб ПВХ, монтаж абонентских вводов, прокладка оптического кабеля.</div>
+                </div>
+                <div class="about-vacancy__bottom">
+                  <div class="about-vacancy-prop">
+                    <div class="about-vacancy-prop__name">Обязанности:</div>
+                    <div class="about-vacancy-prop__desc">
+                      <ul>
+                        <li>поиск и привлечение клиентов;</li>
+                        <li>активное участие в переговорах;</li>
+                        <li>составление отчетности;</li>
+                        <li>ведение, поддержание и развитие клиентской базы.;</li>
+                        <li>анализ рынка и сбор информации о клиентах;</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about-vacancy-prop">
+                    <div class="about-vacancy-prop__name">Требования:</div>
+                    <div class="about-vacancy-prop__desc">
+                      <ul>
+                        <li>высшее образование;</li>
+                        <li>наличие личного автомобиля;</li>
+                        <li>наличие опыта;</li>
+                        <li>порядочность, ответственность, стрессоустойчивость</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about-vacancy-prop">
+                    <div class="about-vacancy-prop__name">Условия:</div>
+                    <div class="about-vacancy-prop__desc">
+                      <ul>
+                        <li>официальное оформление</li>
+                        <li>полная занятость</li>
+                        <li>полный соц. пакет</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about-vacancy__btn btn btn-secondary-fill btn_fat mt-5">Отправить резюме</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="page__footer">
+        <div class="page-prefooter">
+          <div class="container">
+            <div class="row page-prefooter__row">
+              <div class="col-auto">
+                <div class="row align-items-center page-prefooter__row">
+                  <div class="col-auto page-prefooter__header">Будьте всегда в курсе!</div>
+                  <div class="col-auto">
+                    <form class="subscribe-form" action="#" data-parsley-validate>
+                      <div class="subscribe-form__col">
+                        <input class="subscribe-form__input" required type="email" placeholder="Ваш e-mail">
+                      </div>
+                      <button class="subscribe-form__btn btn btn-light" type="submit">Подписаться</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <ul class="social">
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm icm-facebook"></i></a></li>
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm icm-twitter"></i></a></li>
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm icm-vk"></i></a></li>
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm icm-inst"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer">
+          <div class="container">
+            <div class="row page-footer__row page-footer__row_1">
+              <div class="col">
+                <div class="row mb-3 mb-lg-0">
+                  <div class="col">
+                    <div class="footer-nav">
+                      <div class="footer-nav__header">Компания</div>
+                      <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">О компании</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Новости</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Сотрудники</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Вакансии</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Магазины</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Политика</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="footer-nav">
+                      <div class="footer-nav__header">Информация</div>
+                      <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Помощь</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Условия оплаты</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Условия доставки</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Гарантия на товар</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Возможности</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="footer-nav">
+                      <div class="footer-nav__header">Помощь</div>
+                      <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Блог</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Вопрос-ответ</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Бренды</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Обзоры</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto mb-3 mb-lg-0">
+                <div class="footer-contacts">
+                  <div class="footer-contacts__item">
+                    <div class="footer-contacts__ico"><i class="icm icm-phone-out"></i></div>
+                    <div class="footer-contacts__text">
+                      <div class="footer-contacts__val">+7(499) 638-23-05</div>
+                      <div class="footer-contacts__desc">Пн-Пт с 9:00 до 17:00</div>
+                    </div>
+                  </div>
+                  <div class="footer-contacts__item">
+                    <div class="footer-contacts__ico"><i class="icm icm-placemark"></i></div>
+                    <div class="footer-contacts__text">
+                      <div class="footer-contacts__val">Челябинск, ул. Лермонтова 21, </div>
+                      <div class="footer-contacts__desc">3 этаж, офис 4</div>
+                    </div>
+                  </div>
+                  <div class="footer-contacts__item">
+                    <div class="footer-contacts__ico"><i class="icm icm-phone-in"></i></div>
+                    <div class="footer-contacts__text">
+                      <div class="footer-contacts__val"><a href="#">Обратный звонок</a></div>
+                      <div class="footer-contacts__desc">Перезвоним и примем заказ</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row page-footer__row page-footer__row_2">
+              <div class="col">
+                <div class="copyright">2018 © Аспро: Next – универсальный интернет-магазин</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--scripts =================================================-->
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/chosen/chosen.jquery.min.js"></script>
+    <script src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="libs/inputmask/dist/min/inputmask/jquery.inputmask.min.js"></script>
+    <script src="libs/parsleyjs/dist/parsley.min.js"></script>
+    <script src="libs/parsleyjs/dist/i18n/ru.js"></script>
+    <script src="libs/nouislider/distribute/nouislider.min.js"></script>
+    <script src="libs/select2/dist/js/select2.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

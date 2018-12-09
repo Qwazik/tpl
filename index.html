@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head></head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="libs/chosen/chosen.min.css">
+  <link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="libs/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="libs/nouislider/distribute/nouislider.min.css">
+  <link rel="stylesheet" href="libs/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <body><!--[if lt IE 9]>
+    <p class="browserupgrade">Ваш браузер  <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для корректного отображения сайтов.</p><![endif]-->
+    <div class="page">
+      <header class="page__header">
+        <div class="top-panel">
+          <div class="container">
+            <div class="row">
+              <div class="col top-panel-mobile-section">
+                <div class="mobile-nav-btn"><span></span><span></span><span></span></div>
+                <div class="location">
+                  <div class="location-current" role="current" data-val="Челябинск"><i class="icm icm-placemark location__ico"></i><span role="current-name">Челябинск</span></div>
+                  <ul class="location-list" role="list">
+                    <li class="location-list__item active" data-val="Челябинск" role="item">Челябинск</li>
+                    <li class="location-list__item" data-val="Брянск" role="item">Брянск</li>
+                    <li class="location-list__item" data-val="Москва" role="item">Москва</li>
+                    <li class="location-list__item" data-val="Брянск" role="item">Брянск</li>
+                    <li class="location-list__item" data-val="Москва" role="item">Москва</li>
+                    <li class="location-list__item" data-val="Брянск" role="item">Брянск</li>
+                    <li class="location-list__item" data-val="Москва" role="item">Москва</li>
+                    <li class="location-list__item" data-val="Брянск" role="item">Брянск</li>
+                    <li class="location-list__item" data-val="Москва" role="item">Москва</li>
+                    <li class="location-list__item" data-val="Брянск" role="item">Брянск</li>
+                    <li class="location-list__item" data-val="Москва" role="item">Москва</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-auto">
+                <ul class="top-nav">
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">О нас</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">Как купить</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">Доставка и оплата</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">Гарантия и Возврат</a></li>
+                </ul>
+              </div>
+              <div class="col top-panel__auth">
+                <div class="top-auth"><a class="top-auth__item" href="#">Войти</a><a class="top-auth__item" href="#">Регистрация</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-header">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="d-none d-md-block col d-lg-none"></div>
+              <div class="col">
+                <div class="row page-header__side">
+                  <div class="col"><a class="logo page-header__logo" href="/">Готовое решение</a></div>
+                  <div class="col-auto"><span class="page-header__tel to-tel d-none d-lg-block"><i class="icm icm-phone-in mr-1"></i><span>+7 (000) 000-00-10</span></span></div>
+                </div>
+              </div>
+              <div class="col-auto ta-center d-none d-lg-block"><a class="btn btn-secondary" href="#callback">Заказать звонок</a></div>
+              <div class="col-auto col-sm">
+                <div class="row page-header__side">
+                  <div class="col-auto d-none d-lg-block"><a class="ico-link" href="#"><span class="ico-link__ico"><i class="icm icm-fav"></i></span><span class="ico-link__text">Избранное</span></a></div>
+                  <div class="col-auto d-none d-lg-block"><a class="ico-link" href="#"><span class="ico-link__ico"><i class="icm icm-libra"></i></span><span class="ico-link__text">В сравнении</span></a></div>
+                  <div class="col-auto ml-auto ml-lg-0"><a class="ico-link cart-link" href="#"><span class="ico-link__ico cart-link__ico"><i class="icm icm-cart"></i>
+                        <div class="cart-link__col">12</div></span><span class="ico-link__text"><span>Корзина</span><span class="ico-link__desc">12 товаров на 45 000 р.</span></span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="page__nav">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-auto col-lg">
+                <ul class="main-nav">
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Акции</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Услуги</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Блог</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Проекты</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="col-8 col-lg ml-auto ml-lg-0">
+                <div class="main-search">
+                  <input class="main-search__input" type="text" placeholder="Поиск...">
+                  <button class="main-search__btn" type="submit"><i class="icm icm-magnifier"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container mt-lg-3 ovh">
+        <div class="row home-slider">
+          <div class="col home-slider__col">
+            <div class="swiper-container home-slider">
+              <div class="home-slider__wrapper swiper-wrapper">
+                <div class="swiper-slide home-slider__item" style="background-image: url(img/home-slider.jpg)"><a class="home-slider__btn btn btn-light" href="#">Узнать подробнее</a></div>
+                <div class="swiper-slide home-slider__item" style="background-image: url(img/home-slider.jpg)"><a class="home-slider__btn btn btn-light" href="#">Узнать подробнее</a></div>
+                <div class="swiper-slide home-slider__item" style="background-image: url(img/home-slider.jpg)"><a class="home-slider__btn btn btn-light" href="#">Узнать подробнее</a></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-auto"><a class="home-action" href="#" style="background-image:url(img/home-action1.jpg)">
+              <div class="home-action__text">До -25% на ноутбуки</div></a><a class="home-action" href="#" style="background-image:url(img/home-action2.jpg)">
+              <div class="home-action__text">Цифровые камеры <br> скидки до 45%</div></a></div>
+        </div>
+      </div>
+      <!-- START: popular-cats-->
+      <section class="big-pad popular-cats">
+        <div class="container">
+          <h2 class="h-row">
+            <div class="h">Популярные категории</div><a class="btn btn-secondary" href="#">
+               Весь каталог<i class="icm icm-arr-right"></i></a>
+          </h2>
+        </div>
+        <div class="container popular-cats__container">
+          <div class="row popular-cats__row">
+            <div class="col">
+              <div class="row h-100 h-lg-auto">
+                <div class="col col-lg-12">
+                  <div class="popular-cat popular-cat_horizontal" style="background-color: #3F4953; color: #ffffff;">
+                    <div class="popular-cat__image" style="background-image: url(img/p-cat1.jpg);"></div>
+                    <div class="popular-cat__text">
+                      <h3 class="popular-cat__header">Автоэлектроника</h3>
+                      <ul class="popular-cat__list">
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Акустика </a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Автомобильные видеоплееры и DVD</a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Видеорегистраторы</a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Магнитолы и головные системы</a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Сигнализация </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-12">
+                  <div class="popular-cat popular-cat_horizontal" style="background-color: #DB2F54; color: #ffffff;">
+                    <div class="popular-cat__image" style="background-image: url(img/p-cat2.jpg);"></div>
+                    <div class="popular-cat__text">
+                      <h3 class="popular-cat__header">Фото и видеотехника</h3>
+                      <ul class="popular-cat__list">
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Фотоаппараты</a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Видеокамеры</a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Экшен-камеры</a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Объективы</a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Штативы</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row h-100">
+                <div class="col">
+                  <div class="popular-cat" style="background-color: #49A4CA; color: #ffffff;">
+                    <div class="popular-cat__image" style="background-image: url(img/p-cat3.jpg);"></div>
+                    <div class="popular-cat__text">
+                      <h3 class="popular-cat__header">Бытовая техника</h3>
+                      <ul class="popular-cat__list">
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Холодильники</a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Пылесосы</a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Печи СВЧ</a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Сушильные машины</a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Стиральные машины</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="popular-cat" style="background-color: #FFD54A; color: #000;">
+                    <div class="popular-cat__image" style="background-image: url(img/p-cat4.jpg);"></div>
+                    <div class="popular-cat__text">
+                      <h3 class="popular-cat__header">Инструмент  </h3>
+                      <ul class="popular-cat__list">
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Электродрели </a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Шуруповерты</a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Перфораторы</a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Угловые шлифмашины </a></li>
+                        <li class="popular-cat__item"><a class="popular-cat__link" href="#">Штроборезы</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: popular-cats-->
+      <!-- START: best-prods-->
+      <div class="big-pad best-prods">
+        <div class="container">
+          <div class="h-row">
+            <div class="h">Лучшие предложения</div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="product">
+                <div class="product__image"><img class="img-responsive" src="img/product1.jpg" alt="">
+                  <div class="product__options">
+                    <button class="product__option"><i class="icm icm-fav"></i></button>
+                    <button class="product__option"><i class="icm icm-libra"></i></button>
+                  </div>
+                </div>
+                <div class="product__body">
+                  <div class="product__name">Фотоаппарат Canon EOS 6D Body</div>
+                  <ul class="product__rating rating">
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item"><i class="icm icm-star"></i></li>
+                  </ul>
+                  <div class="product__price">от 1 350 <span class="rouble">е</span></div>
+                </div>
+                <div class="product__footer"><a class="product-link" href="#">Фото и видео техника <i class="icm icm-arrow-right-sm"></i></a>
+                  <button class="product__buy"><i class="icm icm-cart"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="product">
+                <div class="product__image"><img class="img-responsive" src="img/product2.jpg" alt="">
+                  <div class="product__options">
+                    <button class="product__option"><i class="icm icm-fav"></i></button>
+                    <button class="product__option"><i class="icm icm-libra"></i></button>
+                  </div>
+                </div>
+                <div class="product__body">
+                  <div class="product__name">Фотоаппарат Canon EOS 6D Body</div>
+                  <ul class="product__rating rating">
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item"><i class="icm icm-star"></i></li>
+                  </ul>
+                  <div class="product__price">от 1 350 <span class="rouble">е</span></div>
+                </div>
+                <div class="product__footer"><a class="product-link" href="#">Фото и видео техника <i class="icm icm-arrow-right-sm"></i></a>
+                  <button class="product__buy"><i class="icm icm-cart"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="product">
+                <div class="product__image"><img class="img-responsive" src="img/product3.jpg" alt="">
+                  <div class="product__options">
+                    <button class="product__option"><i class="icm icm-fav"></i></button>
+                    <button class="product__option"><i class="icm icm-libra"></i></button>
+                  </div>
+                </div>
+                <div class="product__body">
+                  <div class="product__name">Фотоаппарат Canon EOS 6D Body</div>
+                  <ul class="product__rating rating">
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item"><i class="icm icm-star"></i></li>
+                  </ul>
+                  <div class="product__price">от 1 350 <span class="rouble">е</span></div>
+                </div>
+                <div class="product__footer"><a class="product-link" href="#">Фото и видео техника <i class="icm icm-arrow-right-sm"></i></a>
+                  <button class="product__buy"><i class="icm icm-cart"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="product">
+                <div class="product__image"><img class="img-responsive" src="img/product4.jpg" alt="">
+                  <div class="product__options">
+                    <button class="product__option"><i class="icm icm-fav"></i></button>
+                    <button class="product__option"><i class="icm icm-libra"></i></button>
+                  </div>
+                </div>
+                <div class="product__body">
+                  <div class="product__name">Фотоаппарат Canon EOS 6D Body</div>
+                  <ul class="product__rating rating">
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item"><i class="icm icm-star"></i></li>
+                  </ul>
+                  <div class="product__price">от 1 350 <span class="rouble">е</span></div>
+                </div>
+                <div class="product__footer"><a class="product-link" href="#">Фото и видео техника <i class="icm icm-arrow-right-sm"></i></a>
+                  <button class="product__buy"><i class="icm icm-cart"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="product">
+                <div class="product__image"><img class="img-responsive" src="img/product1.jpg" alt="">
+                  <div class="product__options">
+                    <button class="product__option"><i class="icm icm-fav"></i></button>
+                    <button class="product__option"><i class="icm icm-libra"></i></button>
+                  </div>
+                </div>
+                <div class="product__body">
+                  <div class="product__name">Фотоаппарат Canon EOS 6D Body</div>
+                  <ul class="product__rating rating">
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item"><i class="icm icm-star"></i></li>
+                  </ul>
+                  <div class="product__price">от 1 350 <span class="rouble">е</span></div>
+                </div>
+                <div class="product__footer"><a class="product-link" href="#">Фото и видео техника <i class="icm icm-arrow-right-sm"></i></a>
+                  <button class="product__buy"><i class="icm icm-cart"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="product">
+                <div class="product__image"><img class="img-responsive" src="img/product2.jpg" alt="">
+                  <div class="product__options">
+                    <button class="product__option"><i class="icm icm-fav"></i></button>
+                    <button class="product__option"><i class="icm icm-libra"></i></button>
+                  </div>
+                </div>
+                <div class="product__body">
+                  <div class="product__name">Фотоаппарат Canon EOS 6D Body</div>
+                  <ul class="product__rating rating">
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item"><i class="icm icm-star"></i></li>
+                  </ul>
+                  <div class="product__price">от 1 350 <span class="rouble">е</span></div>
+                </div>
+                <div class="product__footer"><a class="product-link" href="#">Фото и видео техника <i class="icm icm-arrow-right-sm"></i></a>
+                  <button class="product__buy"><i class="icm icm-cart"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="product">
+                <div class="product__image"><img class="img-responsive" src="img/product3.jpg" alt="">
+                  <div class="product__options">
+                    <button class="product__option"><i class="icm icm-fav"></i></button>
+                    <button class="product__option"><i class="icm icm-libra"></i></button>
+                  </div>
+                </div>
+                <div class="product__body">
+                  <div class="product__name">Фотоаппарат Canon EOS 6D Body</div>
+                  <ul class="product__rating rating">
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item"><i class="icm icm-star"></i></li>
+                  </ul>
+                  <div class="product__price">от 1 350 <span class="rouble">е</span></div>
+                </div>
+                <div class="product__footer"><a class="product-link" href="#">Фото и видео техника <i class="icm icm-arrow-right-sm"></i></a>
+                  <button class="product__buy"><i class="icm icm-cart"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="product">
+                <div class="product__image"><img class="img-responsive" src="img/product4.jpg" alt="">
+                  <div class="product__options">
+                    <button class="product__option"><i class="icm icm-fav"></i></button>
+                    <button class="product__option"><i class="icm icm-libra"></i></button>
+                  </div>
+                </div>
+                <div class="product__body">
+                  <div class="product__name">Фотоаппарат Canon EOS 6D Body</div>
+                  <ul class="product__rating rating">
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item rating__item_active"><i class="icm icm-star"></i></li>
+                    <li class="rating__item"><i class="icm icm-star"></i></li>
+                  </ul>
+                  <div class="product__price">от 1 350 <span class="rouble">е</span></div>
+                </div>
+                <div class="product__footer"><a class="product-link" href="#">Фото и видео техника <i class="icm icm-arrow-right-sm"></i></a>
+                  <button class="product__buy"><i class="icm icm-cart"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END: best-prods-->
+      <!-- START: home news and actions-->
+      <div class="big-pad home-news">
+        <div class="container">
+          <div class="h-row">
+            <div class="h">Новости и акции</div>
+            <div class="h__more"><a class="btn btn-secondary" href="#">
+                 Все новости<i class="icm icm-arrow-right-sm ml-1"></i></a></div>
+          </div>
+          <div class="row home-news__row">
+            <div class="col-4 home-news__item">
+              <div class="news-item bg-muted1"><a class="news-item__image" href="#" style="background-image: url(img/news-item1.jpg)"></a>
+                <div class="news-item__text"><a class="news-item-name" href="#">Открытие Магазина</a>
+                  <div class="news-item-date">06.08.2018</div>
+                  <div class="news-item-text">26 июля состоялось торжественное открытие нашего нового магазина на ул. Южно-Моравской, 22!</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 home-news__item">
+              <div class="news-item bg-muted1"><a class="news-item__image" href="#" style="background-image: url(img/news-item2.jpg)"></a>
+                <div class="news-item__text"><a class="news-item-name" href="#">Все о жидкокристаллических дисплеях</a>
+                  <div class="news-item-date">06.08.2018</div>
+                  <div class="news-item-text">26 июля состоялось торжественное открытие нашего нового магазина на ул. Южно-Моравской, 22!</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 home-news__item">
+              <div class="news-item bg-muted1"><a class="news-item__image" href="#" style="background-image: url(img/news-item3.jpg)"></a>
+                <div class="news-item__text"><a class="news-item-name" href="#">10 предметов, без которых не обойтись летом</a>
+                  <div class="news-item-date">06.08.2018</div>
+                  <div class="news-item-text">26 июля состоялось торжественное открытие нашего нового магазина на ул. Южно-Моравской, 22!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END: home news and actions-->
+      <!-- START: text content-->
+      <div class="pb-5">
+        <div class="container">
+          <div class="h-row">
+            <div class="h">Интернет-магазин в Челябинске</div>
+          </div>
+          <div class="text-content">
+            <p>Сайт, торгующий товарами в Челябинске. Позволяет пользователям сформировать заказ на покупку, выбрать способ оплаты и доставки заказа в сети Интернет. Выбрав необходимые товары или услуги, пользователь обычно имеет возможность тут же на сайте выбрать метод оплаты и доставки.</p>
+            <p>Основное отличие Интернет-магазина от традиционного — в типе торговой площадки.</p>
+          </div>
+        </div>
+      </div>
+      <!-- END: text content-->
+      <!-- START: recent news-->
+      <div class="big-pad bg-muted2">
+        <div class="container">
+          <div class="h-row">
+            <div class="h">Ранее вы смотрели</div>
+            <div class="recent-navigation" id="recent">
+              <button class="recent-navigation__btn" role="prev"><i class="icm icm-arrow-left"></i></button>
+              <button class="recent-navigation__btn" role="next"><i class="icm icm-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="recent-slider swiper-container" data-nav="#recent">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a class="recent-item" href="#">
+                  <div class="recent-item__image"><img class="recent-item-image" src="img/recent1.jpg" alt=""/></div>
+                  <div class="recent-item__text">
+                    <div class="recent-item-name">Велосипед женский Stern Motion 4.0</div>
+                    <div class="recent-item-price">17 991<span class="rouble">е</span>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="recent-item" href="#">
+                  <div class="recent-item__image"><img class="recent-item-image" src="img/recent2.jpg" alt=""/></div>
+                  <div class="recent-item__text">
+                    <div class="recent-item-name">Футболка для мальчиков Nike Just Do It Camo XS</div>
+                    <div class="recent-item-price">17 991<span class="rouble">е</span>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="recent-item" href="#">
+                  <div class="recent-item__image"><img class="recent-item-image" src="img/recent3.jpg" alt=""/></div>
+                  <div class="recent-item__text">
+                    <div class="recent-item-name">Кроссовки для бега 40 размер</div>
+                    <div class="recent-item-price">17 991<span class="rouble">е</span>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="recent-item" href="#">
+                  <div class="recent-item__image"><img class="recent-item-image" src="img/recent4.jpg" alt=""/></div>
+                  <div class="recent-item__text">
+                    <div class="recent-item-name">Сабвуфер Mystery MBB-20A</div>
+                    <div class="recent-item-price">17 991<span class="rouble">е</span>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="recent-item" href="#">
+                  <div class="recent-item__image"><img class="recent-item-image" src="img/recent5.jpg" alt=""/></div>
+                  <div class="recent-item__text">
+                    <div class="recent-item-name">Водонагреватель Thermex 350 Stream</div>
+                    <div class="recent-item-price">17 991<span class="rouble">е</span>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="recent-item" href="#">
+                  <div class="recent-item__image"><img class="recent-item-image" src="img/recent6.jpg" alt=""/></div>
+                  <div class="recent-item__text">
+                    <div class="recent-item-name">Водонагреватель Electrolux NP4 MINIFIX</div>
+                    <div class="recent-item-price">17 991<span class="rouble">е</span>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="recent-item" href="#">
+                  <div class="recent-item__image"><img class="recent-item-image" src="img/recent1.jpg" alt=""/></div>
+                  <div class="recent-item__text">
+                    <div class="recent-item-name">Велосипед женский Stern Motion 4.0</div>
+                    <div class="recent-item-price">17 991<span class="rouble">е</span>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="recent-item" href="#">
+                  <div class="recent-item__image"><img class="recent-item-image" src="img/recent2.jpg" alt=""/></div>
+                  <div class="recent-item__text">
+                    <div class="recent-item-name">Футболка для мальчиков Nike Just Do It Camo XS</div>
+                    <div class="recent-item-price">17 991<span class="rouble">е</span>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="recent-item" href="#">
+                  <div class="recent-item__image"><img class="recent-item-image" src="img/recent3.jpg" alt=""/></div>
+                  <div class="recent-item__text">
+                    <div class="recent-item-name">Кроссовки для бега 40 размер</div>
+                    <div class="recent-item-price">17 991<span class="rouble">е</span>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="recent-item" href="#">
+                  <div class="recent-item__image"><img class="recent-item-image" src="img/recent4.jpg" alt=""/></div>
+                  <div class="recent-item__text">
+                    <div class="recent-item-name">Сабвуфер Mystery MBB-20A</div>
+                    <div class="recent-item-price">17 991<span class="rouble">е</span>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="recent-item" href="#">
+                  <div class="recent-item__image"><img class="recent-item-image" src="img/recent5.jpg" alt=""/></div>
+                  <div class="recent-item__text">
+                    <div class="recent-item-name">Водонагреватель Thermex 350 Stream</div>
+                    <div class="recent-item-price">17 991<span class="rouble">е</span>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="swiper-slide"><a class="recent-item" href="#">
+                  <div class="recent-item__image"><img class="recent-item-image" src="img/recent6.jpg" alt=""/></div>
+                  <div class="recent-item__text">
+                    <div class="recent-item-name">Водонагреватель Electrolux NP4 MINIFIX</div>
+                    <div class="recent-item-price">17 991<span class="rouble">е</span>
+                    </div>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END: recent news
+      -->
+      <footer class="page__footer">
+        <div class="page-prefooter">
+          <div class="container">
+            <div class="row page-prefooter__row">
+              <div class="col-auto">
+                <div class="row align-items-center page-prefooter__row">
+                  <div class="col-auto page-prefooter__header">Будьте всегда в курсе!</div>
+                  <div class="col-auto">
+                    <form class="subscribe-form" action="#" data-parsley-validate>
+                      <div class="subscribe-form__col">
+                        <input class="subscribe-form__input" required type="email" placeholder="Ваш e-mail">
+                      </div>
+                      <button class="subscribe-form__btn btn btn-light" type="submit">Подписаться</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <ul class="social">
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm icm-facebook"></i></a></li>
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm icm-twitter"></i></a></li>
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm icm-vk"></i></a></li>
+                  <li class="social__item"><a class="social__link" href="#"><i class="icm icm-inst"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer">
+          <div class="container">
+            <div class="row page-footer__row page-footer__row_1">
+              <div class="col">
+                <div class="row mb-3 mb-lg-0">
+                  <div class="col">
+                    <div class="footer-nav">
+                      <div class="footer-nav__header">Компания</div>
+                      <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">О компании</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Новости</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Сотрудники</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Вакансии</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Магазины</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Политика</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="footer-nav">
+                      <div class="footer-nav__header">Информация</div>
+                      <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Помощь</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Условия оплаты</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Условия доставки</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Гарантия на товар</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Возможности</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="footer-nav">
+                      <div class="footer-nav__header">Помощь</div>
+                      <ul class="footer-nav__list">
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Блог</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Вопрос-ответ</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Бренды</a></li>
+                        <li class="footer-nav__item"><a class="footer-nav__link" href="#">Обзоры</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto mb-3 mb-lg-0">
+                <div class="footer-contacts">
+                  <div class="footer-contacts__item">
+                    <div class="footer-contacts__ico"><i class="icm icm-phone-out"></i></div>
+                    <div class="footer-contacts__text">
+                      <div class="footer-contacts__val">+7(499) 638-23-05</div>
+                      <div class="footer-contacts__desc">Пн-Пт с 9:00 до 17:00</div>
+                    </div>
+                  </div>
+                  <div class="footer-contacts__item">
+                    <div class="footer-contacts__ico"><i class="icm icm-placemark"></i></div>
+                    <div class="footer-contacts__text">
+                      <div class="footer-contacts__val">Челябинск, ул. Лермонтова 21, </div>
+                      <div class="footer-contacts__desc">3 этаж, офис 4</div>
+                    </div>
+                  </div>
+                  <div class="footer-contacts__item">
+                    <div class="footer-contacts__ico"><i class="icm icm-phone-in"></i></div>
+                    <div class="footer-contacts__text">
+                      <div class="footer-contacts__val"><a href="#">Обратный звонок</a></div>
+                      <div class="footer-contacts__desc">Перезвоним и примем заказ</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row page-footer__row page-footer__row_2">
+              <div class="col">
+                <div class="copyright">2018 © Аспро: Next – универсальный интернет-магазин</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--scripts =================================================-->
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/chosen/chosen.jquery.min.js"></script>
+    <script src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="libs/inputmask/dist/min/inputmask/jquery.inputmask.min.js"></script>
+    <script src="libs/parsleyjs/dist/parsley.min.js"></script>
+    <script src="libs/parsleyjs/dist/i18n/ru.js"></script>
+    <script src="libs/nouislider/distribute/nouislider.min.js"></script>
+    <script src="libs/select2/dist/js/select2.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
