@@ -1,0 +1,50 @@
+extends _template
+
+block main
+  .ovh: .container.mt-lg-3
+    mixin breadcrumbs(arr)
+      ul.breadcrumbs.mt-3.mt-sm-5
+        li.breadcrumbs__item: span.breadcrumbs__link Главная
+        -for(i in arr)
+          li.breadcrumbs__item: a(href="#").breadcrumbs__link=arr[i]
+    +breadcrumbs(['Корзина'])
+    .h.h-big.mb-3.mt-mb-5 Корзина
+  .container
+    .cart-table
+      .cart-table-row
+        .cart-table-cell.cart-table-cell_img: img(src="img/cart1.jpg", alt="").cart-table-img
+        .cart-table-center
+          .cart-table-group.cart-table-group_border
+            .cart-table-cell.cart-table-cell_name Кофемашина DeLonghi Magnifica EС <br> AM 22.360.S, Silver 
+          .cart-table-group
+            .cart-table-cell
+              .counter
+                .counter__btn: i.icm.icm-minus
+                input(type="text" value="1").counter__value
+                .counter__btn: i.icm.icm-plus
+            .cart-table-cell.cart-table-cell_price 45 500 <span class="rouble ">е</span>
+        .cart-table-cell.cart-table-cell_close: i.icm.icm-close
+      .cart-table-row
+        .cart-table-cell.cart-table-cell_img: img(src="img/cart2.jpg", alt="").cart-table-img
+        .cart-table-center
+          .cart-table-group.cart-table-group_border
+            .cart-table-cell.cart-table-cell_name Кофемашина DeLonghi Magnifica EС <br> AM 22.360.S, Silver 
+          .cart-table-group
+            .cart-table-cell
+              .counter
+                .counter__btn: i.icm.icm-minus
+                input(type="text" value="1").counter__value
+                .counter__btn: i.icm.icm-plus
+            .cart-table-cell.cart-table-cell_price 45 500 <span class="rouble ">е</span>
+        .cart-table-cell.cart-table-cell_close: i.icm.icm-close
+    .cart-table-footer.mb-4.mb-sm-10
+      a(href="#").cart-table-footer__back
+        i.icm.icm-arrow-left.mr-2 
+        span Вернуться в каталог товаров
+      .cart-table-footer__order
+        .amount-price.mb-3
+          .amount-price__title Итого
+          .amount-price__price 45 860 <span class="rouble">у</span> 
+        input(type="submit" class="btn btn-secondary-fill btn_tt" value="оформить заказ")
+      
+    

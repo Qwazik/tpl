@@ -1,0 +1,36 @@
+extends _template
+
+block main
+  .container.mt-lg-3
+    mixin breadcrumbs(arr)
+      ul.breadcrumbs.mt-3.mt-sm-5
+        li.breadcrumbs__item: span.breadcrumbs__link Главная
+        -for(i in arr)
+          li.breadcrumbs__item: a(href="#").breadcrumbs__link=arr[i]
+    +breadcrumbs(['Акции'])
+    .h.h-big.mb-3.mt-mb-5 Акции
+  .container
+    .actions-list
+      .actions-list__item
+        .action-item
+          .action-item__image(style="background-image:url(img/action-img1.jpg)")
+          .action-item__text
+            .action-item-name Распродажа до 50% уже началась!
+            .action-item-text Лучшие товары для активного отдыха по супервыгодным ценам. Будьте летом на коне!
+            a(href="#").action-item-btn.btn.btn-secondary Подробнее
+      .actions-list__item
+        .action-item
+          .action-item__image(style="background-image:url(img/action-img2.jpg)")
+          .action-item__text
+            .action-item-name Распродажа до 50% уже началась!
+            .action-item-text Лучшие товары для активного отдыха по супервыгодным ценам. Будьте летом на коне!
+            a(href="#").action-item-btn.btn.btn-secondary Подробнее
+      .actions-list__item
+        .action-item
+          .action-item__image(style="background-image:url(img/action-img3.jpg)")
+          .action-item__text
+            .action-item-name Распродажа до 50% уже началась!
+            .action-item-text Лучшие товары для активного отдыха по супервыгодным ценам. Будьте летом на коне!
+            a(href="#").action-item-btn.btn.btn-secondary Подробнее
+        
+        

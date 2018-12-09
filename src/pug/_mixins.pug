@@ -1,0 +1,31 @@
+mixin news-item(img, name, date, text)
+  .col-4.home-news__item
+    .news-item.bg-muted1
+      a(href="#").news-item__image(style="background-image: url("+img+")")
+      .news-item__text
+        a(href="#").news-item-name=name
+        .news-item-date=date
+        .news-item-text=text
+mixin recent-item(img, name, price)
+  a(href="#").recent-item
+    .recent-item__image
+      img(src=img, alt="").recent-item-image
+    .recent-item__text
+      .recent-item-name=name
+      .recent-item-price
+        !=price 
+        span.rouble е
+mixin breadcrumbs(arr)
+  ul.breadcrumbs.mt-3.mt-sm-5
+    li.breadcrumbs__item: span.breadcrumbs__link Главная
+    -for(i in arr)
+      li.breadcrumbs__item: a(href="#").breadcrumbs__link=arr[i]
+mixin blog-item(img,name,desc,className)
+  a(href="#").blog-item(class=className)
+    -if(img)
+      .blog-item__image(style="background-image:url("+img+")")
+    .blog-item__text
+      -if(name)
+        .blog-item-name=name
+      -if(desc)
+        .blog-item-desc=desc

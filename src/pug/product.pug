@@ -1,0 +1,212 @@
+extends _template
+
+block main
+    .ovh: .container.mt-lg-3
+      +breadcrumbs(['Главная','Каталог','Бытовая техника','Кофеварки','JURA'])
+      .h.h-big.mb-3.mt-mb-5 Эспрессо кофемашина DeLonghi Dinamica ECAM 350.55.B
+    .product
+      .product-top
+        .container: .product-top__row
+          .product-top__left
+            .product-top__props
+              .rating
+                .rating-item.rating-item_positive
+                .rating-item.rating-item_positive
+                .rating-item.rating-item_positive
+                .rating-item.rating-item_positive
+                .rating-item
+              .product-top__prop Артикул: 1234568
+            .product-top__props
+              .product-top__prop
+                .product-top__ico: i.icm.icm-shield
+                span Гарантия — 1 год
+              .product-top__prop
+                .product-top__ico: i.icm.icm-car
+                span Условия доставки
+          .product-top__right
+            .product-share
+              a(href="#").product-share__item: i.icm.icm-fav
+              a(href="#").product-share__item: i.icm.icm-libra
+              a(href="#").product-share__item: i.icm.icm-rss
+      .product-preview
+        .container
+         .row.product-preview__row
+          .col-12.col-md-6
+            .product-info
+              .product-info__logo: img(src="img/product-preview-logo.png", alt="")
+              .product-info__desc кофемашина, 1450 Вт, корпус металл/пластик, капучинатор автоматический, цвет черный <br> <a href="#" class="link">Характеристики</a>
+              .product-float
+                .product-info__price 67 450 <span class="rouble">у</span>
+                .product-info__btns
+                  a(href="#").btn.btn-round.btn-secondary-fill.product-info__btn.btn_fat
+                    i.icm.icm-cart.mr-1
+                    span В корзину
+                  a(href="#").btn.btn-round.btn-primary-fill.product-info__btn.btn_fat
+                    i.icm.icm-oneclick.mr-1
+                    span Купить в 1 клик
+          .col-12.col-md-6
+            .product-photo
+              a(href="img/product-preview-big.jpg").product-photo__main
+                img(src="img/product-preview.jpg", alt="").product-photo-main
+              .product-thumbnails
+                .product-thumbnails__item(data-big="img/product-preview-big.jpg" data-normal="img/product-preview.jpg").active: img(src="img/product-preview-small.jpg", alt="")
+                .product-thumbnails__item(data-big="img/product-thumb1-big.jpg" data-normal="img/product-thumb1.jpg"): img(src="img/product-thumb1-small.jpg", alt="")
+                .product-thumbnails__item(data-big="img/product-thumb2-big.jpg" data-normal="img/product-thumb2.jpg"): img(src="img/product-thumb2-small.jpg", alt="")
+      .product-tabs.js-tabs
+        .product-tabs-nav
+          .container
+            .product-tabs-nav__list(role="nav")
+              .product-tabs-nav__item.active Характеристики
+              .product-tabs-nav__item описание
+              .product-tabs-nav__item ОТзывы
+        .product-tabs-body(role="body")
+          .product-tabs-body__item.active
+            .container
+              .product-params
+                .product-params__row
+                  .product-params__cell Тип	
+                  .product-params__cell Кофемашина
+                .product-params__row
+                  .product-params__cell Модель	
+                  .product-params__cell Ecam 22.360.S
+                .product-params__row
+                  .product-params__cell Вид кофе	
+                  .product-params__cell Молотый, В зернах
+                .product-params__row
+                  .product-params__cell Рецепты	
+                  .product-params__cell Эспрессо, Капучино
+                .product-params__row
+                  .product-params__cell Вид капучинатора
+                  .product-params__cell Автоматический
+                .product-params__row
+                  .product-params__cell Кол-во приготовляемых чашек кофе, 
+                  .product-params__cell 2
+                .product-params__row
+                  .product-params__cell Емкость для воды, л	
+                  .product-params__cell 1.8
+                .product-params__row
+                  .product-params__cell Материал жерновов	
+                  .product-params__cell Нержавеющая сталь
+                .product-params__row
+                  .product-params__cell Макс. давление, бар	
+                  .product-params__cell 15
+                .product-params__row
+                  .product-params__cell Мощность, Вт
+                  .product-params__cell 1450
+                .product-params__row
+                  .product-params__cell Особенности
+                  .product-params__cell Регулировка температуры, Индикатор уровня воды, Контроль крепости кофе, Подогрев чашек, Светоиндикатор работы, Таймер, Режим самоочистки
+                .product-params__row
+                  .product-params__cell Комплектация
+                  .product-params__cell Кофемашина, кабель питания, мерный стакан, щетка для чистки, блок подачи горячей воды, фильтр для смягчения воды, индикаторная полоска, средство для удаления накипи, инструкция
+                .product-params__row
+                  .product-params__cell Размеры, мм
+                  .product-params__cell 238 х 430 х 351
+                .product-params__row
+                  .product-params__cell Размер упаковки (ДхШхВ), см	
+                  .product-params__cell 31 x 44 x 54
+                .product-params__row
+                  .product-params__cell Вес, г	
+                  .product-params__cell 9000
+                .product-params__row
+                  .product-params__cell Вес в упаковке, г	
+                  .product-params__cell 12930
+                .product-params__row
+                  .product-params__cell Гарантия	2 года
+                  .product-params__cell Гарантия	2 года
+                .product-params__row
+                  .product-params__cell Страна-изготовитель
+                  .product-params__cell Румыния
+          .product-tabs-body__item
+            .container
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur reprehenderit pariatur consequatur perspiciatis quaerat eos, enim rerum laudantium doloremque unde ratione nulla magnam minus aliquam, exercitationem ex qui quam assumenda!
+          .product-tabs-body__item
+            .container
+              | Отзывы
+    // START: similar news
+    .big-pad.bg-muted2.pb-0
+      .container(role="slider-container")
+        .h-row
+          .h Вместе с этим товаром покупают
+          .product-navigation#productSlider1
+            button.product-navigation__btn(role="prev"): i.icm.icm-arrow-left
+            button.product-navigation__btn(role="next"): i.icm.icm-arrow-right
+        .product-slider.swiper-container(data-nav="#productSlider1")
+          .swiper-wrapper
+            -for(var i=0;i<10;i++)
+              .swiper-slide
+                .product
+                  .product__image
+                    img(src="img/product1.jpg", alt="").img-responsive
+                    .product__options
+                      button.product__option: i.icm.icm-fav
+                      button.product__option: i.icm.icm-libra
+                  .product__body
+                    .product__name Фотоаппарат Canon EOS 6D Body
+                    .product__body-row
+                      .product__body-col  
+                        ul.product__rating.rating
+                          li.rating__item.rating__item_active: i.icm.icm-star
+                          li.rating__item.rating__item_active: i.icm.icm-star
+                          li.rating__item.rating__item_active: i.icm.icm-star
+                          li.rating__item.rating__item_active: i.icm.icm-star
+                          li.rating__item: i.icm.icm-star
+                        .product__price от 1 350 <span class="rouble">е</span>
+                      .product__body-col
+                        button.product__buy: i.icm.icm-cart
+    // END: similar news
+    // START: recommends news
+    .big-pad.bg-muted2.pb-0
+      .container(role="slider-container")
+        .h-row
+          .h Вместе с этим товаром покупают
+          .product-navigation#productSlider2
+            button.product-navigation__btn(role="prev"): i.icm.icm-arrow-left
+            button.product-navigation__btn(role="next"): i.icm.icm-arrow-right
+        .product-slider.swiper-container(data-nav="#productSlider2")
+          .swiper-wrapper
+            -for(var i=0;i<10;i++)
+              .swiper-slide
+                .product
+                  .product__image
+                    img(src="img/product1.jpg", alt="").img-responsive
+                    .product__options
+                      button.product__option: i.icm.icm-fav
+                      button.product__option: i.icm.icm-libra
+                  .product__body
+                    .product__name Фотоаппарат Canon EOS 6D Body
+                    .product__body-row
+                      .product__body-col  
+                        ul.product__rating.rating
+                          li.rating__item.rating__item_active: i.icm.icm-star
+                          li.rating__item.rating__item_active: i.icm.icm-star
+                          li.rating__item.rating__item_active: i.icm.icm-star
+                          li.rating__item.rating__item_active: i.icm.icm-star
+                          li.rating__item: i.icm.icm-star
+                        .product__price от 1 350 <span class="rouble">е</span>
+                      .product__body-col
+                        button.product__buy: i.icm.icm-cart
+    // END: recommends news
+    // START: recent news
+    .big-pad.bg-muted2
+      .container
+        .h-row
+          .h Ранее вы смотрели
+          .recent-navigation#recentSlider
+            button.recent-navigation__btn(role="prev"): i.icm.icm-arrow-left
+            button.recent-navigation__btn(role="next"): i.icm.icm-arrow-right
+        .recent-slider.swiper-container(data-nav="#recentSlider")
+          .swiper-wrapper
+            .swiper-slide: +recent-item('img/recent1.jpg', 'Велосипед женский Stern Motion 4.0',  '17 991')
+            .swiper-slide: +recent-item('img/recent2.jpg', 'Футболка для мальчиков Nike Just Do It Camo XS',  '17 991')
+            .swiper-slide: +recent-item('img/recent3.jpg', 'Кроссовки для бега 40 размер',  '17 991')
+            .swiper-slide: +recent-item('img/recent4.jpg', 'Сабвуфер Mystery MBB-20A',  '17 991')
+            .swiper-slide: +recent-item('img/recent5.jpg', 'Водонагреватель Thermex 350 Stream',  '17 991')
+            .swiper-slide: +recent-item('img/recent6.jpg', 'Водонагреватель Electrolux NP4 MINIFIX',  '17 991')
+            .swiper-slide: +recent-item('img/recent1.jpg', 'Велосипед женский Stern Motion 4.0',  '17 991')
+            .swiper-slide: +recent-item('img/recent2.jpg', 'Футболка для мальчиков Nike Just Do It Camo XS',  '17 991')
+            .swiper-slide: +recent-item('img/recent3.jpg', 'Кроссовки для бега 40 размер',  '17 991')
+            .swiper-slide: +recent-item('img/recent4.jpg', 'Сабвуфер Mystery MBB-20A',  '17 991')
+            .swiper-slide: +recent-item('img/recent5.jpg', 'Водонагреватель Thermex 350 Stream',  '17 991')
+            .swiper-slide: +recent-item('img/recent6.jpg', 'Водонагреватель Electrolux NP4 MINIFIX',  '17 991')
+    // END: recent news

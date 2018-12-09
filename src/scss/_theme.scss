@@ -1,0 +1,118 @@
+@import "_settings/_mixins";
+@import "_settings/_config";
+
+/*-------------------------------------------------*/
+/*  buttons
+/*-------------------------------------------------*/
+.btn{
+	background: none;
+	border:none;
+	padding: 0;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	line-height: 1;
+	padding: .9rem 2.4rem;
+	border-radius: 99rem;
+	text-decoration: none;
+	transition: background .3s;
+	letter-spacing: em(0.72, 14);
+	outline:none;
+	@each $name, $color in $button-colors{
+		@if($name == 'light'){
+			&-#{$name}{
+				background: $color;
+				color: $primary-dark-color;
+				&:hover{
+					border:2px solid $color;
+					background: $primary-dark-color;
+					color: $color;
+				}
+			}
+		}@else{
+			&-#{$name}{
+				border: 2px solid $color;
+				color: $color;
+				&:hover{
+					background: $color;
+					color: #ffffff;
+				}
+				&-fill{
+					background: $color;
+					@if(lightenes($color) lt 50){
+						color: #fff;
+					}@else{
+						color: #202020;
+					}
+					&:hover{
+						color: $color;
+						box-shadow:inset 0 0 0px 2px $color;
+						background:none;
+					}
+				}
+			}
+		}
+	}
+	&_fat{
+		text-transform: uppercase;
+		padding: 2.5rem 2.3rem;
+		font-size: 1.5rem;
+	}
+	&_tt{
+		padding: 2.5rem 6.4rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: em(1.5px, 15px);
+		font-size: 1.5rem;
+	}
+	&-bd-thin{
+		border-width: 1px;
+	}
+}
+
+/*-------------------------------------------------*/
+/*  borders
+/*-------------------------------------------------*/
+
+.bd{
+	@each $name, $color in $bd-colors{
+		&-#{$name}{
+			border-color: $color;
+		}
+	}
+}
+
+/*-------------------------------------------------*/
+/*  backgrounds
+/*-------------------------------------------------*/
+
+.bg{
+	@each $name, $color in $backgrounds-colors{
+		&-#{$name}{
+			background-color: $color;
+		}
+	}
+}
+
+/*-------------------------------------------------*/
+/*  text
+/*-------------------------------------------------*/
+
+.text{
+	display: inline-block;
+	@each $name, $color in $text-colors{
+		&-#{$name}{
+			color: $color;
+		}
+	}
+}
+
+.fz{
+	@each $name, $size in $text-size{
+		&-#{$name}{
+			font-size: fz($size);
+		}
+	}
+}

@@ -1,0 +1,140 @@
+extends _template
+
+block main
+    .ovh: .container.mt-lg-3
+      +breadcrumbs(['Блог','Бытовая техника','Кофемашины'])
+      .h.h-big.mb-3.mt-mb-5 Кофемашины
+    .catalog
+      .container
+        .row
+          .col.col-lg-3
+            -var props = ['Актаком (10)','АКИП (43)','Aaronia (21)','Aeroflex (10)','GW Instek (28)','Keysight Technologies (36)','Micronix (11)','RIGOL (14)','Rohde&Schwarz (15)','Tektronix ']
+            -var props1 = ['Кофемашина ','Рожковая кофеварка ','Капельная кофеварка ','Капсульная кофеварка ','Бойлерная кофеварка']
+            .catalog-filter
+              .catalog-filter__close.d-lg-none: i.icm.icm-close
+              .catalog-filter-section.catalog-filter-section_price
+                .catalog-filter-section__name Цена
+                .catalog-filter-section__body
+                  .catalog-filter-price(role="slider")
+                    .price-slider__outputs
+                      .price-slider__output: input(type="text" role="min")
+                      .price-slider__sep: span -
+                      .price-slider__output: input(type="text" role="max")
+                    .catalog-filter-price__slider
+                      .js-slider(data-min="0" data-start='[1000, 50000]' data-max="100000")
+              .catalog-filter-section
+                .catalog-filter-section__name Бренд
+                .catalog-filter-section__body
+                 .catalog-filter-props-list
+                  -for(prop in props)
+                    .catalog-filter-props-list__item
+                      label.checkbox
+                        input(type="checkbox").checkbox__input
+                        .checkbox__ico
+                        .checkbox__name=props[prop]
+              .catalog-filter-section
+                .catalog-filter-section__name
+                  | Тип
+                  .catalog-tip
+                    .catalog-tip__name: i.icm.icm-quest
+                    .catalog-tip__body Lorem ipsum dolor sit amet consectetur adipisicing elit. In veniam, eos, maxime, doloremque dolorum eveniet nihil asperiores maiores quia molestias dicta soluta voluptates inventore ad architecto animi nostrum est? Tenetur.
+                .catalog-filter-section__body
+                 .catalog-filter-props-list
+                  -for(prop in props1)
+                    .catalog-filter-props-list__item
+                      label.checkbox
+                        input(type="checkbox").checkbox__input
+                        .checkbox__ico
+                        .checkbox__name=props1[prop]
+          .col-12.col-lg-9
+            .d-lg-none.pb-2
+              button.open-catalog-filter.btn.btn-primary.btn-round.btn-bd-thin.mr-1 Фильтр
+              button.open-catalog-sort.btn.btn-primary.btn-round.btn-bd-thin.mr-1 Сортировка
+            .catalog-sort
+              .catalog-sort__col
+                .sort-section
+                  .sort-section__name#sortType Сортировать по:
+                  .sort-section__select
+                     .c-select(data-label="#sortType")
+                      .c-select-name(role="selected" data-value="")
+                        | Lorem, ipsum.
+                      .c-select-close(role="close"): i.icm.icm-angle-bottom
+                      ul.c-select-list(role="list")
+                        li.c-select-list__item(data-value="13") дате добавления
+                        li.c-select-list__item(data-value="13") сначала дешевле
+                        li.c-select-list__item(data-value="13") сначала дороже
+                        li.c-select-list__item(data-value="13") рейтингу
+              .catalog-sort__col
+                .sort-section
+                  .sort-section__name#sortBy Кол-во на странице: 
+                  .sort-section__select
+                    .c-select(data-label="#sortBy")
+                      .c-select-name(role="selected" data-value="")
+                        | Lorem, ipsum.
+                      .c-select-close(role="close"): i.icm.icm-angle-bottom
+                      ul.c-select-list(role="list")
+                        li.c-select-list__item(data-value="13") 10
+                        li.c-select-list__item(data-value="13") 20
+                        li.c-select-list__item(data-value="13") 30
+                        li.c-select-list__item(data-value="13") 100
+            .catalog-list.mb-5
+              .row
+                -for(var j=1;j<=3;j++)
+                  -for(var img=1,i=1;i<=4;i++,img++)
+                    .col-12.col-sm-6.col-lg-4
+                      .product
+                        .product__image
+                          img(src="img/product"+i+".jpg", alt="").img-responsive
+                          .product__options
+                            button.product__option: i.icm.icm-fav
+                            button.product__option: i.icm.icm-libra
+                        .product__body
+                          .product__name Фотоаппарат Canon EOS 6D Body
+                          .product__body-row
+                            .product__body-col  
+                              ul.product__rating.rating
+                                li.rating__item.rating__item_active: i.icm.icm-star
+                                li.rating__item.rating__item_active: i.icm.icm-star
+                                li.rating__item.rating__item_active: i.icm.icm-star
+                                li.rating__item.rating__item_active: i.icm.icm-star
+                                li.rating__item: i.icm.icm-star
+                              .product__price от 1 350 <span class="rouble">е</span>
+                            .product__body-col
+                              button.product__buy: i.icm.icm-cart
+            ul.catalog-pagination
+              li.catalog-pagination__item: a(href="#").catalog-pagination__link.active 1
+              li.catalog-pagination__item: a(href="#").catalog-pagination__link 2
+              li.catalog-pagination__item: a(href="#").catalog-pagination__link 3
+              li.catalog-pagination__item: a(href="#").catalog-pagination__link 4
+              li.catalog-pagination__item: a(href="#").catalog-pagination__link 5
+              li.catalog-pagination__item: a(href="#").catalog-pagination__link 6
+              li.catalog-pagination__item: a(href="#").catalog-pagination__link 7
+              li.catalog-pagination__item: a(href="#").catalog-pagination__link 8
+    .text-content
+      .container.py-6
+        .h2 Интернет-магазин в Челябинске
+        p Сайт, торгующий товарами в Челябинске. Позволяет пользователям сформировать заказ на покупку, выбрать способ оплаты и доставки заказа в сети Интернет. Выбрав необходимые товары или услуги, пользователь обычно имеет возможность тут же на сайте выбрать метод оплаты и доставки.
+        p Основное отличие Интернет-магазина от традиционного — в типе торговой площадки.
+    // START: recent news
+    .big-pad.bg-muted2
+      .container
+        .h-row
+          .h Ранее вы смотрели
+          .recent-navigation
+            button.recent-navigation__btn(role="prev"): i.icm.icm-arrow-left
+            button.recent-navigation__btn(role="next"): i.icm.icm-arrow-right
+        .recent-slider.swiper-container
+          .swiper-wrapper
+            .swiper-slide: +recent-item('img/recent1.jpg', 'Велосипед женский Stern Motion 4.0',  '17 991')
+            .swiper-slide: +recent-item('img/recent2.jpg', 'Футболка для мальчиков Nike Just Do It Camo XS',  '17 991')
+            .swiper-slide: +recent-item('img/recent3.jpg', 'Кроссовки для бега 40 размер',  '17 991')
+            .swiper-slide: +recent-item('img/recent4.jpg', 'Сабвуфер Mystery MBB-20A',  '17 991')
+            .swiper-slide: +recent-item('img/recent5.jpg', 'Водонагреватель Thermex 350 Stream',  '17 991')
+            .swiper-slide: +recent-item('img/recent6.jpg', 'Водонагреватель Electrolux NP4 MINIFIX',  '17 991')
+            .swiper-slide: +recent-item('img/recent1.jpg', 'Велосипед женский Stern Motion 4.0',  '17 991')
+            .swiper-slide: +recent-item('img/recent2.jpg', 'Футболка для мальчиков Nike Just Do It Camo XS',  '17 991')
+            .swiper-slide: +recent-item('img/recent3.jpg', 'Кроссовки для бега 40 размер',  '17 991')
+            .swiper-slide: +recent-item('img/recent4.jpg', 'Сабвуфер Mystery MBB-20A',  '17 991')
+            .swiper-slide: +recent-item('img/recent5.jpg', 'Водонагреватель Thermex 350 Stream',  '17 991')
+            .swiper-slide: +recent-item('img/recent6.jpg', 'Водонагреватель Electrolux NP4 MINIFIX',  '17 991')
+    // END: recent news

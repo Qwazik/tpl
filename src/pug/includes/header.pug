@@ -1,0 +1,87 @@
+header.page__header
+  .top-panel
+    .container: .row
+      .col.top-panel-mobile-section
+        .mobile-nav-btn
+          span
+          span
+          span
+        .location
+          .location-current(role="current" data-val="Челябинск")
+            i.icm.icm-placemark.location__ico
+            span(role="current-name") Челябинск
+          ul.location-list(role="list")
+            li.location-list__item(data-val="Челябинск" role="item").active Челябинск
+            li.location-list__item(data-val="Брянск" role="item") Брянск
+            li.location-list__item(data-val="Москва" role="item") Москва
+            li.location-list__item(data-val="Брянск" role="item") Брянск
+            li.location-list__item(data-val="Москва" role="item") Москва
+            li.location-list__item(data-val="Брянск" role="item") Брянск
+            li.location-list__item(data-val="Москва" role="item") Москва
+            li.location-list__item(data-val="Брянск" role="item") Брянск
+            li.location-list__item(data-val="Москва" role="item") Москва
+            li.location-list__item(data-val="Брянск" role="item") Брянск
+            li.location-list__item(data-val="Москва" role="item") Москва
+      .col-auto
+        ul.top-nav
+          li.top-nav__item
+            a.top-nav__link(href="#") О нас
+          li.top-nav__item
+            a.top-nav__link(href="#") Как купить
+          li.top-nav__item
+            a.top-nav__link(href="#") Доставка и оплата
+          li.top-nav__item
+            a.top-nav__link(href="#") Гарантия и Возврат
+      .col.top-panel__auth
+        .top-auth
+          a(href="#").top-auth__item Войти
+          a(href="#").top-auth__item Регистрация
+  .page-header
+    .container: .row.align-items-center
+      .d-none.d-md-block.col.d-lg-none
+      .col
+        .row.page-header__side
+          .col: a(href="/").logo.page-header__logo Готовое решение
+          .col-auto: span.page-header__tel.to-tel.d-none.d-lg-block
+            i.icm.icm-phone-in.mr-1
+            span +7 (000) 000-00-10
+      .col-auto.ta-center.d-none.d-lg-block
+        a(href="#callback").btn.btn-secondary Заказать звонок
+      .col-auto.col-sm
+        .row.page-header__side
+          .col-auto.d-none.d-lg-block
+            a(href="#").ico-link
+              span.ico-link__ico: i.icm.icm-fav
+              span.ico-link__text Избранное
+          .col-auto.d-none.d-lg-block
+            a(href="#").ico-link
+              span.ico-link__ico: i.icm.icm-libra
+              span.ico-link__text В сравнении
+          .col-auto.ml-auto.ml-lg-0
+            a(href="#").ico-link.cart-link
+              span.ico-link__ico.cart-link__ico
+                i.icm.icm-cart
+                .cart-link__col 12
+              span.ico-link__text
+                span Корзина
+                span.ico-link__desc 12 товаров на 45 000 р.
+  nav.page__nav
+    .container: .row.align-items-center
+      .col-auto.col-lg
+        ul.main-nav
+          li.main-nav__item
+            a.main-nav__link(href="#") Каталог
+          li.main-nav__item
+            a.main-nav__link(href="#") Акции
+          li.main-nav__item
+            a.main-nav__link(href="#") Услуги
+          li.main-nav__item
+            a.main-nav__link(href="#") Блог
+          li.main-nav__item
+            a.main-nav__link(href="#") Проекты
+          li.main-nav__item
+            a.main-nav__link(href="#") Контакты
+      .col-8.col-lg.ml-auto.ml-lg-0
+        .main-search
+          input(type="text" placeholder="Поиск...").main-search__input
+          button(type="submit").main-search__btn: i.icm.icm-magnifier

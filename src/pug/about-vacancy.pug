@@ -1,0 +1,123 @@
+extends _template
+
+block main
+  .container.mt-lg-3
+    mixin breadcrumbs(arr)
+      ul.breadcrumbs.mt-3.mt-sm-5
+        li.breadcrumbs__item: span.breadcrumbs__link Главная
+        -for(i in arr)
+          li.breadcrumbs__item: a(href="#").breadcrumbs__link=arr[i]
+    +breadcrumbs(['О компании'])
+    .h.h-big.mb-3.mb-md-5 О компании
+  .about
+    .about-nav
+      .container
+        .about-nav__nav
+          .about-nav__item.active: a(href="#").about-nav__link Сотрудники
+          .about-nav__item: a(href="#").about-nav__link Вакансии
+          .about-nav__item: a(href="#").about-nav__link Лицензии
+          .about-nav__item: a(href="#").about-nav__link Политика конфиденциальности
+  .bg-muted1: .container.py-5
+      .row
+        .col-12.mb-3
+          .about-vacancy
+            .about-vacancy-toggler: i.icm.icm-angle-bottom
+            .about-vacancy__top
+              .about-vacancy-name
+                span Монтажник связи
+                span.about-vacancy-name__price 150 000 р.
+              .about-vacancy-desc Строительство кабельной канализации и прокладка сетей связи xPON. Монтаж короба, труб ПВХ, монтаж абонентских вводов, прокладка оптического кабеля.
+            .about-vacancy__bottom
+              .about-vacancy-prop
+                .about-vacancy-prop__name Обязанности:
+                .about-vacancy-prop__desc
+                  ul
+                    li поиск и привлечение клиентов;
+                    li активное участие в переговорах;
+                    li составление отчетности;
+                    li ведение, поддержание и развитие клиентской базы.;
+                    li анализ рынка и сбор информации о клиентах;
+              .about-vacancy-prop
+                .about-vacancy-prop__name Требования:
+                .about-vacancy-prop__desc
+                  ul
+                    li высшее образование;
+                    li наличие личного автомобиля;
+                    li наличие опыта;
+                    li порядочность, ответственность, стрессоустойчивость
+              .about-vacancy-prop
+                .about-vacancy-prop__name Условия:
+                .about-vacancy-prop__desc
+                  ul
+                    li официальное оформление
+                    li полная занятость
+                    li полный соц. пакет
+              .about-vacancy__btn.btn.btn-secondary-fill.btn_fat.mt-5 Отправить резюме
+        .col-12.mb-3
+          .about-vacancy
+            .about-vacancy-toggler: i.icm.icm-angle-bottom
+            .about-vacancy__top
+              .about-vacancy-name
+                span Монтажник связи
+                span.about-vacancy-name__price 150 000 р.
+              .about-vacancy-desc Строительство кабельной канализации и прокладка сетей связи xPON. Монтаж короба, труб ПВХ, монтаж абонентских вводов, прокладка оптического кабеля.
+            .about-vacancy__bottom
+              .about-vacancy-prop
+                .about-vacancy-prop__name Обязанности:
+                .about-vacancy-prop__desc
+                  ul
+                    li поиск и привлечение клиентов;
+                    li активное участие в переговорах;
+                    li составление отчетности;
+                    li ведение, поддержание и развитие клиентской базы.;
+                    li анализ рынка и сбор информации о клиентах;
+              .about-vacancy-prop
+                .about-vacancy-prop__name Требования:
+                .about-vacancy-prop__desc
+                  ul
+                    li высшее образование;
+                    li наличие личного автомобиля;
+                    li наличие опыта;
+                    li порядочность, ответственность, стрессоустойчивость
+              .about-vacancy-prop
+                .about-vacancy-prop__name Условия:
+                .about-vacancy-prop__desc
+                  ul
+                    li официальное оформление
+                    li полная занятость
+                    li полный соц. пакет
+              .about-vacancy__btn.btn.btn-secondary-fill.btn_fat.mt-5 Отправить резюме
+        .col-12.mb-3
+          .about-vacancy
+            .about-vacancy-toggler: i.icm.icm-angle-bottom
+            .about-vacancy__top
+              .about-vacancy-name
+                span Монтажник связи
+                span.about-vacancy-name__price 150 000 р.
+              .about-vacancy-desc Строительство кабельной канализации и прокладка сетей связи xPON. Монтаж короба, труб ПВХ, монтаж абонентских вводов, прокладка оптического кабеля.
+            .about-vacancy__bottom
+              .about-vacancy-prop
+                .about-vacancy-prop__name Обязанности:
+                .about-vacancy-prop__desc
+                  ul
+                    li поиск и привлечение клиентов;
+                    li активное участие в переговорах;
+                    li составление отчетности;
+                    li ведение, поддержание и развитие клиентской базы.;
+                    li анализ рынка и сбор информации о клиентах;
+              .about-vacancy-prop
+                .about-vacancy-prop__name Требования:
+                .about-vacancy-prop__desc
+                  ul
+                    li высшее образование;
+                    li наличие личного автомобиля;
+                    li наличие опыта;
+                    li порядочность, ответственность, стрессоустойчивость
+              .about-vacancy-prop
+                .about-vacancy-prop__name Условия:
+                .about-vacancy-prop__desc
+                  ul
+                    li официальное оформление
+                    li полная занятость
+                    li полный соц. пакет
+              .about-vacancy__btn.btn.btn-secondary-fill.btn_fat.mt-5 Отправить резюме
